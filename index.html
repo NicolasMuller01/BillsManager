@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,600&display=swap');</style>
+    <title>BillsManager</title>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="left-side">
+            <!--data type-->
+            <select class="left-side_data-type" id="data-type">
+                <option value="ingreso">INGRESO</option>
+                <option value="egreso">EGRESO</option>
+            </select>
+            <!--description-->
+            <textarea id="textarea" placeholder="DESCRIPCION"></textarea>
+            <!--amount-->
+            <input type="text" id="input"placeholder="Monto">
+            <!--save-->
+            <button class="add" type="button">AGREGAR</button>
+            <button class="delete" type="button">ELIMINAR TODO</button>
+        </div>
+        <div class="right-side">
+            <div class="rigth-side-conteiner">
+                <div class="right-side_description">
+                    <p class="right-side_description_p">DESCRIPCION</p>
+                    <p class="right-side_description_node"></p>
+                </div>
+                <div class="right-side_type">
+                    <p class="right-side_type_p">TIPO</p>
+                    <p class="right-side_type_node"></p>
+                </div>
+                <div class="right-side_amount">
+                    <p class="right-side_amount_p">MONTO</p>
+                    <p class="right-side_amount_node"></p>
+                </div>
+            </div>
+            <div class="right-side_summary">
+                <p class="right-side_summary-p">$0</p>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
